@@ -2,7 +2,7 @@
     <table class="table" style="width: 50%;">
         <tr>
             <th>Randevu Tarihi</th>
-            <td>{{ $appointment->appointment_at->formatLocalized('d F Y H:i') }}</td>
+            <td>{{ $appointment->appointment_at->formatLocalized('%d %B %Y %H:%M') }}</td>
         </tr>
         <tr>
             <th>{{ trans('appointment::appointments.form.first_name') . '&' . trans('appointment::appointments.form.last_name') }}</th>

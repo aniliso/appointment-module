@@ -2,10 +2,10 @@
     <body>
         <p>Merhaba</p>
         <p>Websiteden bir mesaj aldık, mesajın detayları:</p>
-		
-		<p><strong>Başvuru Tarihi</strong>: {{ $appointment->created_at->formatLocalized('d F Y H:i') }}</p>
-		
-		<p><strong>Randevu Tarihi</strong>: {{ $appointment->appointment_at->formatLocalized('d F Y H:i') }}</p>
+
+		<p><strong>Başvuru Tarihi</strong>: {{ $appointment->created_at->formatLocalized('%d %B %Y %H:%M') }}</p>
+
+		<p><strong>Randevu Tarihi</strong>: {{ $appointment->appointment_at->formatLocalized('%d %B %Y %H:%M') }}</p>
 
         <p><strong>{{ trans('appointment::appointments.form.fullname') }}</strong>: {{ $appointment->first_name }} {{ $appointment->last_name }}</p>
 
